@@ -1,0 +1,164 @@
+/* --- 01 Typography System
+
+FONT SIZE SYSTEM (px)
+
+ 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+ --- 07 Whitespace
+
+ - SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #f2eae2;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.card-div {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fff;
+}
+
+.card-div img {
+  width: 100%;
+}
+
+.card-div .mobile-img {
+  display: block;
+}
+
+.card-div .desktop-img {
+  display: none;
+}
+
+br {
+  display: none;
+}
+
+.content {
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #6c7289;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.content h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  color: #1c232b;
+  margin-bottom: 1.6rem;
+}
+
+.content .main-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  color: #6c7289;
+  margin-bottom: 2.4rem;
+}
+
+.price-div {
+  display: flex;
+  gap: 1.9rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.price-div .main-price {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  color: #3d8168;
+}
+
+.price-div .sec-price {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  text-decoration: line-through;
+  color: #6c7289;
+}
+
+.content a {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  background: #3d8168;
+  border-radius: 0.8rem;
+  padding: 1.5rem 0;
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.content a:hover {
+  background: #1a4032;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 48em) {
+  .card-div {
+    flex-direction: unset;
+  }
+
+  .card-div .mobile-img {
+    display: none;
+  }
+  br {
+    display: block;
+  }
+
+  .card-div .desktop-img {
+    display: block;
+    width: 50%;
+  }
+
+  .content {
+    padding: 3.2rem;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 90em) {
+  .card-div {
+    width: 50%;
+  }
+}
