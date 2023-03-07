@@ -137,6 +137,7 @@ br {
 @media (min-width: 48em) {
   .card-div {
     flex-direction: unset;
+    width: 60rem;
   }
 
   .card-div .mobile-img {
@@ -154,11 +155,5 @@ br {
   .content {
     padding: 3.2rem;
     justify-content: space-between;
-  }
-}
-
-@media (min-width: 90em) {
-  .card-div {
-    width: 50%;
   }
 }
